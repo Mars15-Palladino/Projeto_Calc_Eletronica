@@ -31,3 +31,16 @@ Em desenvolvimento.
 ## Linguagem
 
 C
+
+### Idéias Futuras
+
+IDEIAS FUTURAS
+
+[ ] Capacitores
+[ ] Indutores
+[ ] Kirchhoff
+[ ] Divisor de tensão
+[ ] Conversor de unidades avançado
+[ ] Interface gráfica
+[ ] Versão Android
+[ ] Publicação na Play Store

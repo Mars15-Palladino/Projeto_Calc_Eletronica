@@ -6,6 +6,10 @@ Calcula Eletrônica em C
 
 Desevolver uma calculadora Básica, capaz de fazer tantos as operações básicas, quanto as operações voltados para  a área de eletrônica apresentando ao usuário o resultado e, quando aplicável, o passo a passo utilizado para chegar ao resultado
 
+## Viabilidade
+
+Riscos aceitáveis, retoro finaceiro não é o importante
+
 ## Requisistos
 
 ### Requisitos Funcionais
