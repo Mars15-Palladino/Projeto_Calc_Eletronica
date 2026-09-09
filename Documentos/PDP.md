@@ -78,8 +78,7 @@ Sujeito a alterações Futuras durante o desenvolvimento
 
 # Estrutura do sistema
 
-Estrutura Planejada para o sistema (Ainda não feita)
-
+A estrutura planejada do sistema encontra-se documentada no arquivo Estrutura do Sistema, contendo a organização dos módulos e suas respectivas responsabilidades.
 
 # Desenvolvimento (Ainda não defido, abaixo exemplo)
 

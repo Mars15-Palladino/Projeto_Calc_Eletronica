@@ -65,5 +65,3 @@ A ideia principal é que uma etapa só inicia quando a etapa anterior é conclu�
  5. Entrega: Depois da fase de testes e correções, teriamos a versão final do programa desenvolvido
 
  6. Mudanças nos requisitos: Seriam altamente complicadas, pois estariam sujeitas a fazerem alterações no código, o que poderia causar atrasos e reorganizações em partes do programa ao se adicionar ou remover funções no programa. 
-    
-
