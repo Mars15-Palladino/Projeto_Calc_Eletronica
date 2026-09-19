@@ -80,18 +80,48 @@ Sujeito a alterações Futuras durante o desenvolvimento
 
 A estrutura planejada do sistema encontra-se documentada no arquivo Estrutura do Sistema, contendo a organização dos módulos e suas respectivas responsabilidades.
 
-# Desenvolvimento (Ainda não defido, abaixo exemplo)
+# Desenvolvimento 
 
-Aqui você explica como pretende transformar o planejamento em código.
+O programa será escrito:
+                       O programa será desenvolvido utilizando a linguagem C, com o código organizado em arquivos .c e .h, buscando separar as responsabilidades e facilitar a organização, manutenção e evolução do projeto. 
 
-Por exemplo:
+                        As funcionalidades serão divididas em módulos de acordo com suas responsabilidades. As funções relacionadas aos cálculos poderão ser organizadas em estruturas próprias, de forma a facilitar a localização do código, possíveis alterações e o reaproveitamento das funcionalidades.
+                        
+                        O desenvolvimento será realizado de forma incremental, seguindo os incrementos definidos no planejamento do projeto. Dessa forma, cada etapa acrescentará novas funcionalidades ao sistema, permitindo que partes do programa sejam implementadas e verificadas antes da continuação do desenvolvimento.
 
-desenvolvimento em C;
-utilização de arquivos .c e .h;
-separação das funcionalidades;
-implementação incremental;
-testes durante o desenvolvimento.
-
+                        Durante a implementação, serão realizados testes para verificar se as funcionalidades desenvolvidas correspondem aos requisitos definidos e aos resultados esperados.
 # Testes
 
-Aqui entra a fase de testes verificando se o que foi programado não está com erros e funcionando como o
+Encontra se no Documento de testes
+
+## Ferramentas e tecnologias
+
+Serão Usadas as seguintes ferramentas e tecnologias durante o desenvolvimento do projeto.
+
+Linguagem C
+VS Code
+GCC
+Git
+GitHub
+Terminal/Prompt de Comando
+Windows e Linux
+
+Essa lista poderá ser modificada conforme as necessidades do projeto durante seu desenvolvimento.
+
+## Controle de versão
+O controle de versão será realizado utilizando Git e GitHub, permitindo registrar as alterações realizadas no projeto, manter o histórico de desenvolvimento, recuperar versões anteriores quando necessário e acompanhar a evolução dos diferentes incrementos.
+
+registrar alterações;
+manter histórico;
+recuperar versões anteriores;
+acompanhar a evolução dos incrementos.
+
+## Manutenção e evolução
+
+Após a implementação, o projeto poderá receber alterações e atualizações conforme forem identificadas necessidades de correção, melhoria ou expansão.
+
+correções de erros;
+melhorias;
+novos cálculos;
+alterações nos menus;
+novos incrementos.
