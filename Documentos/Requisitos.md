@@ -43,12 +43,17 @@ Resistência (R)
 
 RF08 — Potência elétrica
 
-A calculadora deverá permitir calcular:
+A calculadora deverá permitir calcular a potência elétrica utilizando diferentes combinações de valores:
 
-Potência (P)
-Tensão (V)
-Corrente (I)
-Resistência (R)
+Tensão (V) e corrente (I);
+Resistência (R) e corrente (I);
+Tensão (V) e resistência (R).
+
+Potência
+├── Tensão (V) + Corrente (I) → P = V × I
+├── Resistência (R) + Corrente (I) → P = R × I²
+└── Tensão (V) + Resistência (R) → P = V² ÷ R
+
 
 RF09 — Resistores em série
 
@@ -88,7 +93,6 @@ O menu principal deverá apresentar, inicialmente, as seguintes categorias:
 1. Operações Básicas
 2. Eletrônica
 3. Conversões
-4. Sair
 
 Cada categoria deverá possuir seu próprio submenu com as operações disponíveis.
 
@@ -100,7 +104,6 @@ O sistema deverá permitir que o usuário:
 * Visualize o resultado;
 * Retorne ao menu anterior;
 * Retorne ao menu principal;
-* Encerre o programa através da opção de saída.
 
 A estrutura deverá ser desenvolvida de forma organizada, permitindo a inclusão de novas categorias e funcionalidades futuramente.
 
@@ -118,7 +121,7 @@ RNF03 — Desempenho :As operações deverão apresentar o resultado sem demora 
 
 RNF04 -Usabilidade: O sistema deverá apresentar instruções claras para o usuário.
 
-RNF05 - O programa deverá mostrar o passo a passo das opeçãoes e explicar
+RNF05 - O sistema deverá apresentar uma explicação sobre o cálculo realizado. Nas operações básicas, deverá explicar de forma conceitual o significado da operação. Nas operações de eletrônica, deverá apresentar a explicação do cálculo, incluindo, quando aplicável, a fórmula utilizada, os valores informados, a substituição dos valores e o resultado final.
 
 RNF06 — Portabilidade: O programa deverá priorizar recursos padronizados da linguagem C, evitando dependências específicas de um sistema operacional quando não forem necessárias.
 
