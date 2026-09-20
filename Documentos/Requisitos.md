@@ -45,7 +45,7 @@ RF08 — Potência elétrica
 
 A calculadora deverá permitir calcular a potência elétrica utilizando diferentes combinações de valores:
 
-Tensão (V) e corrente (I);
+Tensão (V) e corrente (I); 
 Resistência (R) e corrente (I);
 Tensão (V) e resistência (R).
 
@@ -64,7 +64,11 @@ RF10 — Resistores em paralelo
 
 Deverá permitir calcular a resistência equivalente de resistores em paralelo.
 
-Aqui teremos que definir posteriormente exatamente quais formas de entrada queremos permitir.
+Aviso: Foi definida a fórmula geral para o cálculo de resistores em paralelo, permitindo o cálculo com dois ou mais resistores:
+
+1/Req = 1/R1 + 1/R2 + 1/R3 + ... + 1/Rn
+
+Também foi definido que o usuário informará inicialmente a quantidade de resistores e, em seguida, os valores de cada resistor.
 
 RF11 — Código de cores de resistores
 

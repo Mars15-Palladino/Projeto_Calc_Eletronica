@@ -1,5 +1,4 @@
-# Documento de Testes — Calc Eletrônica
-
+Documento de Testes — Calc Eletrônica
 1. Objetivo
 
 Esse é documento responsável pelos testes do programa, nele terá as previsões do que podem e não pode e não pode acontecer no programa, testes pré implementação e pós implementação do Calc Eletrônica.
@@ -20,7 +19,6 @@ resultados esperados;
 comportamentos que não devem ocorrer;
 situações de erro;
 limites ou condições específicas da operação.
-
 3. Testes pré-implementação
 
 Antes da implementação do código, serão definidos os casos de teste e seus respectivos resultados esperados.
@@ -54,90 +52,290 @@ Um teste será considerado aprovado quando o comportamento apresentado pelo prog
 
 Caso o resultado obtido seja diferente do esperado, o teste será considerado reprovado e a causa deverá ser analisada para posterior correção.
 
+Comportamentos Esperados pré-implementação
 
-# Comportamentos Esperados pré-implementação
-Nesta etapa serão definidos os comportamentos esperados para cada funcionalidade, antes da implmentação do código, os comportamentos aqui apresentados, serão usados como referêcia para os testes que serão realizados posteriormente.
+Nesta etapa serão definidos os comportamentos esperados para cada funcionalidade, antes da implementação do código. Os comportamentos aqui apresentados serão usados como referência para os testes que serão realizados posteriormente.
 
-## Operações Básicas
+Operações Básicas
+Adição
 
-* Adição: 
-            |O programa deverá 
-                            | Receber no minimo dois valores informados pelo usuário;
-                            | Realizar a soma dos valores;
-                            | Apresetar o resultado correto;
-                            | apresentar os valores utilizados no cálculo;
-                            | Apresentar explicação da operação feita;
-            |Não deverá:
+O programa deverá:
 
-                            |apresentar resultado incorreto;
-                            |aceitar uma entrada inválida sem realizar o tratamento adequado.
-* subtração:
-            | O programa deverá
-                                |receber no minimo dois valores informados pelo usuário;
-                                |realizar a subtração dos valores, seguindo a ordem em que foram informados(Esquerda para a direita);
-                                |apresentar o resultado correto.
-                                |apresentar os valores utilizados no cálculo;
-                                |Apresentar explicação da operação feita;
-            |Não deverá
-                                |apresentar resultado incorreto;
-                                |apresentar comportamento inesperado diante de entradas inválidas.
-
-* multtiplicação: 
-                |O programa deverá:
-                                    | Receber no minimo dois valores informados pelo usuário;
-                                    | Realizar a Multiplicação dos valores;
-                                    | Apresentar o resultado correto;
-                                    | apresentar os valores utilizados no cálculo;
-                                    | Apresentar a explicação do cálculo
-                
-                | Não deverá:
-                                    |Apresentar resultado incorreto
-                                    |Apresentar comportamento inesperado diante de entradas inválidas.
-
-
-* Divisão: 
-            | O programa deverá
-                                |Receber no mínimo dois valores informados pelo usuário;
-                                |Realizar a divisão dos valores, seguindo a ordem em que foram informados(Esquerda para a direita);
-                                |Apresentar o resultado correto;
-                                |Apresentar os valores utilizados no cálculo;
-                                |Apresentar a explicação da operação feita;
-
-           
-            | Não deverá:
-                                |Apresentar resultado incorreto;
-                                |Permitir divisão por zero;
-                                |Apresentar comportamento inesperado diante de entradas inválidas.
-
-
-## Operações Eletrônica
-
-
-* Lei de ohm
-    * calcular tensão: 
-                        |Receber valores de I = corrente e R = resistência
-                        |Os valores deverão ser mutlplicados
-                        |Apresentar o resultado correto;
-                        |Apresentar os valores utilizados no cálculo;
-                        |Apresentar explicação da operação feita
-
-    * Cálculo de corrente
-                            |Receber os valores de V = tensão e R = resistência;
-                            |Realizar a divisão de V por R;
-                            |Apresentar o resultado correto;
-                            |Apresentar os valores utilizados no cálculo;
-                            |Apresentar a explicação da operação feita;
-                            
-   
-    * Cálculo de resistência
-                            |Receber os valores de V = tensão e I = corrente;
-                            |Realizar a divisão de V por I;
-                            |Apresentar o resultado correto;
-                            |Apresentar os valores utilizados no cálculo;
-                            |Apresentar a explicação da operação feita;
-                            
+Receber no mínimo dois valores informados pelo usuário;
+Realizar a soma dos valores;
+Apresentar o resultado correto;
+Apresentar os valores utilizados no cálculo;
+Apresentar uma explicação da operação realizada.
 
 Não deverá:
-            |Apresentar resultado incorreto;
-            |Apresentar comportamento inesperado diante de entradas inválidas.
-            |Permitir divisão por zero nos cálculos de resistência e Corrente;
+
+Apresentar resultado incorreto;
+Aceitar uma entrada inválida sem realizar o tratamento adequado.
+Subtração
+
+O programa deverá:
+
+Receber no mínimo dois valores informados pelo usuário;
+Realizar a subtração dos valores, seguindo a ordem em que foram informados, da esquerda para a direita;
+Apresentar o resultado correto;
+Apresentar os valores utilizados no cálculo;
+Apresentar uma explicação da operação realizada.
+
+Não deverá:
+
+Apresentar resultado incorreto;
+Apresentar comportamento inesperado diante de entradas inválidas.
+Multiplicação
+
+O programa deverá:
+
+Receber no mínimo dois valores informados pelo usuário;
+Realizar a multiplicação dos valores;
+Apresentar o resultado correto;
+Apresentar os valores utilizados no cálculo;
+Apresentar uma explicação do cálculo realizado.
+
+Não deverá:
+
+Apresentar resultado incorreto;
+Apresentar comportamento inesperado diante de entradas inválidas.
+Divisão
+
+O programa deverá:
+
+Receber no mínimo dois valores informados pelo usuário;
+Realizar a divisão dos valores, seguindo a ordem em que foram informados, da esquerda para a direita;
+Apresentar o resultado correto;
+Apresentar os valores utilizados no cálculo;
+Apresentar uma explicação da operação realizada.
+
+Não deverá:
+
+Apresentar resultado incorreto;
+Permitir divisão por zero;
+Apresentar comportamento inesperado diante de entradas inválidas.
+Operações Eletrônicas
+Lei de Ohm
+Cálculo de tensão
+
+O programa deverá:
+
+Receber os valores de:
+I = corrente;
+R = resistência.
+Utilizar a fórmula:
+
+V = R × I
+
+Realizar a multiplicação dos valores;
+Apresentar os valores utilizados no cálculo;
+Apresentar a fórmula utilizada;
+Apresentar a substituição dos valores na fórmula;
+Apresentar o resultado correto;
+Apresentar uma explicação do cálculo realizado.
+
+Exemplo de apresentação esperada:
+
+Valores:
+R = 100 Ω
+I = 0,5 A
+
+Fórmula:
+V = R × I
+
+Substituindo:
+V = 100 × 0,5
+
+Resultado:
+V = 50 V
+Cálculo de corrente
+
+O programa deverá:
+
+Receber os valores de:
+V = tensão;
+R = resistência.
+Utilizar a fórmula:
+
+I = V ÷ R
+
+Realizar a divisão de V por R;
+Apresentar os valores utilizados no cálculo;
+Apresentar a fórmula utilizada;
+Apresentar a substituição dos valores na fórmula;
+Apresentar o resultado correto;
+Apresentar uma explicação do cálculo realizado.
+
+Não deverá:
+
+Apresentar resultado incorreto;
+Permitir divisão por zero;
+Apresentar comportamento inesperado diante de entradas inválidas.
+Cálculo de resistência
+
+O programa deverá:
+
+Receber os valores de:
+V = tensão;
+I = corrente.
+Utilizar a fórmula:
+
+R = V ÷ I
+
+Realizar a divisão de V por I;
+Apresentar os valores utilizados no cálculo;
+Apresentar a fórmula utilizada;
+Apresentar a substituição dos valores na fórmula;
+Apresentar o resultado correto;
+Apresentar uma explicação do cálculo realizado.
+
+Não deverá:
+
+Apresentar resultado incorreto;
+Permitir divisão por zero;
+Apresentar comportamento inesperado diante de entradas inválidas.
+Potência
+
+O programa deverá:
+
+Receber valores de:
+V = tensão;
+I = corrente;
+R = resistência.
+Possibilitar a realização do cálculo utilizando os valores disponíveis e a fórmula adequada.
+Tensão e corrente
+
+Deverá utilizar:
+
+P = V × I
+
+Resistência e corrente
+
+Deverá utilizar:
+
+P = R × I²
+
+Tensão e resistência
+
+Deverá utilizar:
+
+P = V² ÷ R
+
+Para cada forma de cálculo, o programa deverá:
+
+Identificar os valores necessários;
+Utilizar a fórmula correspondente;
+Apresentar os valores utilizados no cálculo;
+Apresentar a fórmula utilizada;
+Apresentar a substituição dos valores na fórmula;
+Realizar o cálculo;
+Apresentar o resultado correto;
+Apresentar uma explicação do cálculo realizado.
+
+Exemplo de apresentação esperada:
+
+Valores:
+V = 12 V
+I = 2 A
+
+Fórmula:
+P = V × I
+
+Substituindo:
+P = 12 × 2
+
+Resultado:
+P = 24 W
+
+Não deverá:
+
+Apresentar resultado incorreto;
+Utilizar uma fórmula incompatível com os valores informados;
+Apresentar comportamento inesperado diante de entradas inválidas;
+Permitir cálculos com valores inválidos sem o tratamento adequado.
+Resistores em Série
+
+O programa deverá permitir:
+
+Receber dois ou mais valores de resistência;
+Realizar a soma das resistências para obter a resistência equivalente do circuito;
+Utilizar a fórmula:
+
+Req = R1 + R2 + R3 + ... + Rn
+
+Apresentar os valores utilizados no cálculo;
+Apresentar a fórmula utilizada;
+Apresentar a substituição dos valores na fórmula;
+Apresentar a resistência equivalente do circuito;
+Apresentar uma explicação do cálculo realizado.
+
+Exemplo de apresentação esperada:
+
+Valores:
+R1 = 100 Ω
+R2 = 220 Ω
+R3 = 330 Ω
+
+Fórmula:
+Req = R1 + R2 + R3
+
+Substituindo:
+Req = 100 + 220 + 330
+
+Resultado:
+Req = 650 Ω
+
+Não deverá:
+
+Apresentar resultado incorreto;
+Permitir o cálculo com menos de dois resistores;
+Aceitar valores de resistência inválidos;
+Apresentar comportamento inesperado diante de entradas inválidas.
+Resistores em Paralelo
+
+O programa deverá permitir:
+
+Solicitar a quantidade de resistores que serão utilizados no cálculo;
+Receber dois ou mais valores de resistência;
+Receber os valores individualmente, identificando cada resistor, como R1, R2, R3 e assim por diante;
+Calcular a resistência equivalente dos resistores informados;
+Utilizar a fórmula geral:
+
+1/Req = 1/R1 + 1/R2 + 1/R3 + ... + 1/Rn
+
+Apresentar os valores utilizados no cálculo;
+Apresentar a fórmula utilizada;
+Apresentar a substituição dos valores na fórmula;
+Realizar o cálculo;
+Apresentar o resultado da resistência equivalente;
+Apresentar uma explicação da operação realizada.
+
+Exemplo de entrada esperada:
+
+Quantidade de resistores: 3
+
+R1 = 100 Ω
+R2 = 220 Ω
+R3 = 330 Ω
+
+Exemplo de apresentação esperada:
+
+Fórmula:
+
+1/Req = 1/R1 + 1/R2 + 1/R3
+
+Substituindo:
+
+1/Req = 1/100 + 1/220 + 1/330
+
+Resultado:
+
+Req = ...
+
+Não deverá:
+
+Permitir o cálculo com menos de dois resistores;
+Aceitar valores de resistência inválidos;
+Permitir resistência igual a zero em um cálculo que resulte em divisão por zero;
+Apresentar resultado incorreto;
+Apresentar comportamento inesperado diante de entradas inválidas.
