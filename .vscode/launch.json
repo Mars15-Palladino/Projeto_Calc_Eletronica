@@ -5,7 +5,7 @@
             "name": "C: Build and debug Calc Eletronica",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\calc.exe",
+            "program": "${workspaceFolder}\\Calc_Eletronica.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
