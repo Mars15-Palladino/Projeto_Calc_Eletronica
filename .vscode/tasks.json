@@ -13,7 +13,7 @@
                 "${workspaceFolder}\\submenus\\calculadoraBasica.c",
                 "${workspaceFolder}\\submenus\\calculadoraEletronica.c",
                 "-o",
-                "${workspaceFolder}\\calc.exe"
+                "${workspaceFolder}\\Calc_Eletronica.exe"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
