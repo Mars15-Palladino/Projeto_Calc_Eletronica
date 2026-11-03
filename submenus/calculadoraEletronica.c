@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 #include "calculadoraEletronica.h"
+#include "menuLei_OHN/menu_LEI_OHN.h"
+#include "menuPotencia_Eletronica/menuPotencia_eletrica.h"
+
 
 void Menu_Calculadora_Eletronica() {
    
@@ -29,12 +32,15 @@ void Menu_Calculadora_Eletronica() {
                 switch (opcao_menu[0]) {
                     case '1':
                         printf("Opcao 1 selecionada: Lei de Ohm\n");
+                        menu_LEI_OHN();
                         break;
 
-                    case '2':
+                    case '2':{
                         printf("Opcao 2 selecionada: Potencia Eletrica\n");
+                        puts("-------------------------------");
+                        menu_Potencia_Eletrica();
                         break;
-
+                    }
                     case '0':
                         printf("Voltando ao menu Principal...\n");
                         break;

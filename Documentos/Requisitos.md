@@ -17,7 +17,7 @@ Riscos aceitáveis, retoro finaceiro não é o importante
 RF00 — O sistema deverá apresentar o procedimento utilizado para realizar os cálculos de eletrônica, incluindo as fórmulas utilizadas, os valores fornecidos pelo usuário, a substituição dos valores na fórmula e o resultado final.
 
 
-RF01 - A apliccação receberá os dados via teclado
+RF01 - A aplicação receberá os dados via teclado
 
 RF02 - Deverá permitir escolher a Operação Desejada
 

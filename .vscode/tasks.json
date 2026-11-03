@@ -12,6 +12,10 @@
                 "${workspaceFolder}\\Calc_Eletronica.c",
                 "${workspaceFolder}\\submenus\\calculadoraBasica.c",
                 "${workspaceFolder}\\submenus\\calculadoraEletronica.c",
+                "${workspaceFolder}\\operacoes_basicas\\operacao_Basica.c",
+                "${workspaceFolder}\\operacoes_eletronicas\\operacao_Eletronica.c",
+                "${workspaceFolder}\\submenus\\menuLei_OHN\\menu_LEI_OHN.c",
+                "${workspaceFolder}\\submenus\\menuPotencia_Eletronica\\menuPotencia_eletrica.c",
                 "-o",
                 "${workspaceFolder}\\Calc_Eletronica.exe"
             ],

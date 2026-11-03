@@ -1,6 +1,7 @@
 #include <stdio.h> // Ajuste de compilação: inclui funções printf/puts
 #include <string.h> // Ajuste de compilação: inclusão necessária para usar 'strcmp'
 #include "calculadoraBasica.h"
+#include "../operacoes_basicas/operacao_Basica.h"
 
 void Menu_Calculadora_Basica(){
     // Implement the menu logic for the basic calculator here
@@ -26,25 +27,76 @@ void Menu_Calculadora_Basica(){
             if(strcmp(opcao_menu, "1") == 0 || strcmp(opcao_menu, "2") == 0 || strcmp(opcao_menu, "3") == 0 || strcmp(opcao_menu, "4") == 0 || strcmp(opcao_menu, "0") == 0){
                 // Valid option, proceed to the corresponding operation
                     switch (opcao_menu[0]) {
-                        case '1':
+                        case '1':{
                             // Handle addition
                             printf("Opcao 1 selecionada: Adicao\n");
+                            puts("-------------------------------");
+                            double a,b;
+                            printf("Digite o primeiro numero: ");
+                            scanf("%lf",&a);
+                            printf("Digite o segundo numero: ");
+                            scanf("%lf",&b);
+                            while (getchar() != '\n'); // Limpar o buffer do teclado
+                            double resultado = adicao(a,b);
+                            printf("Resultado: %.15g\n", resultado);// Print the result using %g for better formatting aceita até 15 dígitos significativos    
+                            puts("-------------------------------");
                             break;
-                        case '2':
+                        }
+                        case '2':{
                             // Handle subtraction
                             printf("Opcao 2 selecionada: Subtracao\n");
+                            puts("-------------------------------");
+                            double a,b;
+                            printf("Digite o primeiro numero: ");
+                            scanf("%lf",&a);
+                            printf("Digite o segundo numero: ");
+                            scanf("%lf",&b);
+                            while (getchar() != '\n'); // Limpar o buffer do teclado
+                            double resultado = subtracao(a,b);
+                            printf("Resultado: %.15g\n", resultado);
+                            puts("-------------------------------");
                             break;
-                        case '3':
+                        }
+                        case '3':{
                             // Handle multiplication
                             printf("Opcao 3 selecionada: Multiplicacao\n");
+                            puts("-------------------------------");
+                            double a,b;
+                            printf("Digite o primeiro numero: ");
+                            scanf("%lf",&a);
+                            printf("Digite o segundo numero: ");
+                            scanf("%lf",&b);
+                            while (getchar() != '\n'); // Limpar o buffer do teclado
+                            double resultado = multiplicacao(a,b);
+                            printf("Resultado: %.15g\n", resultado);
+                            puts("-------------------------------");
                             break;
-                        case '4':
+                        }
+                        case '4':{
                             // Handle division
                             printf("Opcao 4 selecionada: Divisao\n");
+                            puts("-------------------------------");
+                            double a,b;
+                            
+                            printf("Digite o primeiro numero: ");
+                            scanf("%lf",&a);
+                            printf("Digite o segundo numero: ");
+                            scanf("%lf",&b);
+                            while (getchar() != '\n'); // Limpar o buffer do teclado
+                            if(b == 0) {
+                                printf("Erro: Divisao por zero nao e permitida.\n");
+                                puts("-------------------------------");
+                                break;
+                            }
+                            double resultado = divisao(a,b);
+                            printf("Resultado: %.15g\n", resultado);
+                            puts("-------------------------------");
                             break;
+                        }
                         case '0':
                             // Handle return to previous menu
                             printf("Voltando ao menu Principal...\n");
+                            puts("-------------------------------");
                             break; 
                         default:
                             puts("Opcao invalida!");
