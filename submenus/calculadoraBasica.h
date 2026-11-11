@@ -2,6 +2,6 @@
 #define Calculadora_Basica_H
 
 
-void Menu_Calculadora_Basica();
+void Menu_Calculadora_Basica(void);
 
 #endif

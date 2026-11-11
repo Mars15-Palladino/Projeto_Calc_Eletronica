@@ -3,11 +3,12 @@
 #include <string.h> // Ajuste de compilação: inclusão necessária para usar 'strcmp'
 #include "submenus/calculadoraBasica.h"
 #include "submenus/calculadoraEletronica.h"
+#include "func_utilitarias/utilitarias.h"
 
 int main(){
-    while (true) { // Ajuste de compilação: loop com 'true' agora válido
+    while (1) { // Ajuste de compilação: loop com 'true' agora válido
         printf("=============================\n");
-        printf("Menu: Calculadora Eletronica\n");
+        printf("Menu: Calculadora Eletronica/Basica\n");
         printf("=============================\n");
         printf("1- Calculadora Basica\n");
         printf("2- Calculadora Eletronica\n");
@@ -19,7 +20,7 @@ int main(){
         
          if(fgets(opcao_menu, sizeof(opcao_menu), stdin)!=NULL){ // Ajuste de compilação: usa fgets para ler a entrada do usuário
             opcao_menu[strcspn(opcao_menu, "\n")] = '\0'; // Remove o caractere de nova linha da entrada
-            printf("DEBUG: entrada recebida: [%s]\n", opcao_menu);
+            // printf("DEBUG: entrada recebida: [%s]\n", opcao_menu);
             puts("------------------------------");
 
             if(strcmp(opcao_menu, "1") == 0 || strcmp(opcao_menu, "2") == 0){
@@ -41,6 +42,7 @@ int main(){
             else{
                 puts("Opcao invalida");
                 printf("Escolha uma opcao valida (1 ou 2)\n");
+                pausar_terminal(); // Pausa o terminal após uma entrada inválida
             }
 
             //while (getchar() != '\n'); /* Limpa o buffer do teclado */

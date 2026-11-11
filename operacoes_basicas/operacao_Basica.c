@@ -15,3 +15,6 @@ double multiplicacao(double a, double b) {
 double divisao(double a, double b) {
     return a / b;
 }
+double porcentagem(double a, double b) {
+    return (a * b) / 100;
+}

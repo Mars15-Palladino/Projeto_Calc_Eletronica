@@ -13,6 +13,8 @@ Sua estrtura será dividida em módulos diferetes, com cada um tendo resposabili
 |Calc Eletrônica
                 |Programa principal
                 ├── Menus
+                │   ├── Calculadora Básica
+                │   └── Calculadora Eletrônica
                 │
                 ├── Operações básicas
                 │
@@ -30,8 +32,7 @@ Essa parte do programa fara o gerenciamento e chamadas dos outros módulos/arqui
 Tendo ligação ddireta com o arquivo dos menus, que servirá para chamar as fuções necessárias para o código funcioar.
 
 ### Menus
-
-responsável por mostrar opções para o usuário e chamar a função necessária para operação requisitada, conterá as chamadas para os submennus operções básicas, operações eletrônicas
+Responsáveis por mostrar opções para o usuário e chamar o módulo necessário para a operação requisitada. A calculadora básica encaminha para o submenu de operações básicas, que solicita os valores e chama a função matemática correspondente em Operações Básicas.
 
 ### Operações Básicas
 

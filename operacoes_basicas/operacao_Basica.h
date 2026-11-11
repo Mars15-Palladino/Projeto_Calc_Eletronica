@@ -5,5 +5,6 @@ double adicao(double a, double b);
 double subtracao(double a, double b);
 double multiplicacao(double a, double b);
 double divisao(double a, double b);
+double porcentagem(double a, double b);
 
 #endif // OPERACAO_BASICA_H
